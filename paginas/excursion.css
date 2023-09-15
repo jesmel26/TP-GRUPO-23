@@ -78,16 +78,16 @@ main>div {
 }
 /* Excursiones */
 
-.contenedor-sobre-nosotros{
+.contenedor-sobre-excursiones{
 	display: flex;
 	justify-content: space-evenly;
 }
 
-.imagen-sobre-nosotros{
+.imagen-sobre-excursiones{
 	width:48%;
 }
 
-.sobre-nosotros .contenido-textos{
+.sobre-excursiones .contenido-textos{
 	width: 48%;
 }
 
