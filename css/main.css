@@ -3,7 +3,7 @@
 }
 
 body, main {
-    border: 3px solid blueviolet;
+    /*border: 3px solid blueviolet;*/
     margin: 0.5rem 0.5rem 0.5rem 0;
 }
 
@@ -16,7 +16,7 @@ header {
     width: 100%;            /*Hace que el ancho minimo de este elemento sea el del viewport (min-width o width ?)*/
     min-height:max-content;
     /* border: 3px solid blue; */
-    background-color: rgba(255, 127, 80, 0.9);  /*Solo le da transparencia al fondo, no al contenido*/
+    background-color: rgba(255, 127, 80, 0.9);  /*Solo le da 0.9 de transparencia al fondo, no al contenido*/
     position: fixed;
     top: 0;
     left: 0;
@@ -38,21 +38,23 @@ main {
     background-color: antiquewhite;
     font-family: "Roboto", sans-serif;
     overflow: auto;
+    /*border: 3px solid green;*/
 }
 
 main>div {
     float: left;
     width: 75%;
-    margin: 0 0 0.5rem 1rem;
+    margin: 0 0 0.5rem 0;
     height: auto;
-    border: 2px solid black;
+    /*border: 2px solid black;*/
 }
 
 main>aside {
     float: left;
-    min-width: 20%;
-    width: auto;
-    min-height: 500px;
+    /*min-width: 25%;*/
+    width: 24%;
+    margin: 0 0 0.5rem 0;
+    min-height: 1000px;
     height: auto;
     border: 2px solid red;
 }
@@ -66,11 +68,11 @@ main>aside {
 }
 
 .seccion-interna {
-    margin: 1rem;
+    margin: 1rem 1rem 1rem 2rem;
     font-family: 'Signika Negative', sans-serif;
     color: rgb(122, 10, 10);
     text-align: left;
-    width: 70%;
+    width: 75%;
 }
 
 footer {
@@ -85,7 +87,7 @@ footer {
 /*Logo y Menu Navegación*/
 
 .header-logo {
-    margin: 0 2.5rem 0 10%;
+    margin: 0 3rem 0 10%;
     display: inline-block;
 }
 
@@ -94,17 +96,17 @@ footer {
 }
 
 .header-menubar ul{
-    margin-left: 0.5rem;
+    margin-left: 0rem;
     list-style: none;
     vertical-align: middle;
 }
 
 .header-menubar li {
     float: left;
-    margin: 0 1rem 0.75rem 1rem;
+    margin: 0 0rem 0.75rem 1.2rem;
     font-family: 'Lato', sans-serif;
     text-align: center;
-    font-size: 1.20rem;
+    font-size: 1.15rem;
     font-weight: 600;
 }
 
