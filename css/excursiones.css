@@ -1,14 +1,25 @@
-.contenedor-sobre-excursiones{
-	display: flex;
-	justify-content: space-evenly;
+.contenedor{
+	padding: 30px 0;
+	width: 90%;
+	max-width: 1500px;
+	margin: auto;
+	overflow: hidden;
 }
 
-.imagen-sobre-excursiones{
-	width:48%;
+.contenedor-sobre-excursiones{
+	display: flex;
+	justify-content: baseline;
+}
+
+.contenedor-sobre-excursiones>img{
+	width: 40%;
+	height: 80%;
+	min-height: 35%;
 }
 
 .sobre-excursiones .contenido-textos{
 	width: 48%;
+	margin-left: 4rem;
 }
 
 .contenido-textos h3{
@@ -90,12 +101,4 @@ height: 50px;
 
 .imagen-port:hover .hover-galeria{
 	transform:scale(0);
-}
-
-.contenedor{
-	padding: 60px 0;
-	width: 90%;
-	max-width: 1500px;
-	margin: auto;
-	overflow: hidden;
 }

@@ -32,7 +32,7 @@ header {
 } */
 
 main {
-    margin: 0 0 1rem 0;
+    margin: 0 0 0 0;
     margin-top: 60px;
     padding-top: 20px;  /*Para que no se solape con el menu que esta fixed */
     background-color: antiquewhite;
@@ -68,7 +68,7 @@ main>aside {
 }
 
 .seccion-interna {
-    margin: 1rem 1rem 1rem 2rem;
+    margin: 1rem 1rem 2rem 2rem;
     font-family: 'Signika Negative', sans-serif;
     color: rgb(122, 10, 10);
     text-align: left;
