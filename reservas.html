@@ -32,7 +32,7 @@
             <h1>Reservas</h1>
             <p>Por favor, complete el siguiente formulario para realizar su reserva.</p>
             
-            <form action="#">
+            <form action="#" onsubmit="return validarFormulario()">
                 <label for="nombre">Nombre completo:</label>
                 <input type="text" id="nombre" name="nombre" required>
 
@@ -60,13 +60,13 @@
                 <label for="comentarios">Comentarios adicionales:</label>
                 <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea>
 
-                <input type="submit" value="Enviar reserva" onclick="return validarFormulario()">
+                <input type="submit" value="Enviar reserva">
             </form>
         </div>
 
     </main>
     <footer>
-        <div class="contact-block">Contacto:
+        <div id="tel-mail" class="contact-block">Contacto:
             <ul>
                 <img class="contact-icon" src="img/media/Email-icon.svg" alt="email-icon"><li>v.luna@sanjuan.tur.ar</li>
                 <img class="contact-icon" src="img/media/Whatsapp-icon.svg" alt="WA-icon"><li>(264) 431-3170</li></li>
@@ -79,6 +79,6 @@
             </ul>
         </div>        
     </footer>
-    <script src="/js/resevas.js"></script>
+    <script src="/js/reservas.js"></script>
 </body>
 </html>
