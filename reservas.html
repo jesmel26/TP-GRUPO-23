@@ -45,10 +45,8 @@
                 <label for="excursion">Excursión:</label>
                 <select id="excursion" name="excursion" required>
                     <option value="">Seleccionar una excursión</option>
-                    <option value="excursión1">excursión1</option>
-                    <option value="excursión2">excursión2</option>
-                    <option value="excursión3">excursión3</option>
-                    <option value="excursión4">excursión4</option>
+                    <option value="excursión1">Circuito Diurno Tradicional</option>
+                    <option value="excursión2">Circuito con Luna Llena</option>
                 </select>
 
                 <label for="fecha">Fecha de viaje:</label>
@@ -61,6 +59,7 @@
                 <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea>
 
                 <input type="submit" value="Enviar reserva" onclick="return validarFormulario()">
+                <!-- onclick = "false" no permite el envío del formulario -->
             </form>
         </div>
 

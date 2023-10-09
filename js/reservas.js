@@ -1,51 +1,48 @@
 function validarFormulario() {
-    var nombre = document.getElementById("nombre").value;
-    var email = document.getElementById("email").value;
-    var telefono = document.getElementById("telefono").value;
-    var excursion = document.getElementById("excursion").value;
-    var fecha = document.getElementById("fecha").value;
-    var personas = document.getElementById("personas").value;
+    var nombre = document.getElementById("nombre");
+    var email = document.getElementById("email");
+    var telefono = document.getElementById("telefono");
+    var excursion = document.getElementById("excursion");
+    var fecha = document.getElementById("fecha");
+    var personas = document.getElementById("personas");
 
-    // Validación del nombre (no debe estar vacío)
-    if (nombre === "") {
-        alert("Por favor, ingresa tu nombre.");
+    function mostrarAlerta(mensaje, elemento) {
+        alert(mensaje);
+        elemento.focus();
+    }
+
+    if (nombre.value.trim() === "") {
+        mostrarAlerta("Por favor, ingresa tu nombre.", nombre);
         return false;
     }
 
-    // Validación del correo electrónico
     var emailExpresion = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-    if (!email.match(emailExpresion)) {
-        alert("Por favor, ingresa un correo electrónico válido.");
+    if (!email.value.match(emailExpresion)) {
+        mostrarAlerta("Por favor, ingresa un correo electrónico válido.", email);
         return false;
     }
 
-    // Validación del teléfono (debe ser numérico)
-    if (isNaN(telefono)) {
-        alert("Por favor, ingresa un número de teléfono válido.");
+    if (telefono.value.trim() === "" || isNaN(telefono.value) || telefono.value.length<6){
+        mostrarAlerta("Por favor, ingresa un número de teléfono válido y sin espacios.", telefono);
         return false;
     }
 
-    // Validación de la selección de excursión (no debe estar vacía)
-    if (excursion === "") {
-        alert("Por favor, selecciona una excursión.");
+    if (excursion.value === "") {
+        mostrarAlerta("Por favor, selecciona una excursión.", excursion);
         return false;
     }
 
-    // Validación de la fecha (debe ser una fecha futura)
     var today = new Date();
-    if (new Date(fecha) <= today) {
-        alert("Por favor, selecciona una fecha futura.");
+    if (new Date(fecha.value) <= today || fecha.value === "") {
+        mostrarAlerta("Por favor, selecciona una fecha futura.", fecha);
         return false;
     }
 
-    // Validación del número de personas (debe ser mayor que cero)
-    if (personas <= 0) {
-        alert("Por favor, ingresa un número válido de personas.");
+    if (personas.value <= 0) {
+        mostrarAlerta("Por favor, ingresa un número válido de personas.", personas);
         return false;
     }
 
-    // Si todas las validaciones pasan, el formulario se envía
-    alert("¡Tu reserva ha sido exitosa! Gracias por elegirnos para tu próxima experiencia.")
+    alert("¡Tu reserva ha sido exitosa! Gracias por elegirnos para tu próxima experiencia.");
     return true;
 }
-
