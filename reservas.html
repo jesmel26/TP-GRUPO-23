@@ -32,7 +32,7 @@
             <h1>Reservas</h1>
             <p>Por favor, complete el siguiente formulario para realizar su reserva.</p>
             
-            <form action="#" onsubmit="return validarFormulario()">
+            <form action="#">
                 <label for="nombre">Nombre completo:</label>
                 <input type="text" id="nombre" name="nombre" required>
 
@@ -60,7 +60,7 @@
                 <label for="comentarios">Comentarios adicionales:</label>
                 <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea>
 
-                <input type="submit" value="Enviar reserva">
+                <input type="submit" value="Enviar reserva" onclick="return validarFormulario()">
             </form>
         </div>
 
